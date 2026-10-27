@@ -1,6 +1,6 @@
 package com.github.mr3zee.kefs
 
-internal val mavenRegex = "([\\w.]+):([\\w\\-]+)".toRegex()
+internal val mavenRegex = "([\\w.\\-]+):([\\w\\-]+)".toRegex()
 internal val pluginNameRegex = "[a-zA-Z0-9_-]+".toRegex()
 
 private val replacementPatternForbiddenCharactersRegex = "[^\\w-]".toRegex()

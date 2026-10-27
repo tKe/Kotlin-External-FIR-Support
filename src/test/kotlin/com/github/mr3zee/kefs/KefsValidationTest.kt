@@ -150,6 +150,11 @@ class KefsValidationTest {
     }
 
     @Test
+    fun `mavenRegex matches coordinates with hyphen in group`() {
+        assertTrue(mavenRegex.matches("com.my-company:my-lib"))
+    }
+
+    @Test
     fun `mavenRegex does not match string without colon`() {
         assertFalse(mavenRegex.matches("nocolon"))
     }
